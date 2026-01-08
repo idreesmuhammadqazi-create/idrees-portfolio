@@ -90,7 +90,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-muted/50 dark:bg-muted/30 border-y border-border">
+      <section className="py-16 md:py-24 bg-accent/10 dark:bg-accent/20 border-y border-accent/30">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -102,7 +102,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Let&apos;s Build Something Together
             </h2>
-            <p className="text-muted-foreground mb-8 text-lg">
+            <p className="text-foreground/80 mb-8 text-lg">
               Have a project idea or want to collaborate? I&apos;m always open to
               discussing new opportunities and interesting projects.
             </p>

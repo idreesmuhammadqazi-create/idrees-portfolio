@@ -181,13 +181,13 @@ export default function AboutPage() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto"
         >
-          <div className="p-8 rounded-xl bg-muted/50 dark:bg-muted/30 border border-border text-center">
+          <div className="p-8 rounded-xl bg-accent/10 dark:bg-accent/20 border border-accent/30 text-center">
             <h2 className="text-2xl font-bold mb-4">My Philosophy</h2>
-            <blockquote className="text-lg italic text-muted-foreground mb-4">
+            <blockquote className="text-lg italic text-foreground/80 mb-4">
               &quot;Build what you wish existed. Ship fast. Iterate based on feedback. 
               The best code is code that solves real problems for real people.&quot;
             </blockquote>
-            <p className="text-sm text-muted-foreground/80">— The Vibecoding Manifesto</p>
+            <p className="text-sm text-muted-foreground">— The Vibecoding Manifesto</p>
           </div>
         </motion.section>
       </div>
