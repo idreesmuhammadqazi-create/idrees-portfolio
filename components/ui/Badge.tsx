@@ -17,10 +17,10 @@ export default function Badge({
 }: BadgeProps) {
   const variants = {
     default: 'bg-black dark:bg-white text-white dark:text-black',
-    secondary: 'bg-muted text-muted-foreground',
+    secondary: 'bg-muted text-muted-foreground dark:bg-muted/60',
     outline: 'border border-border bg-transparent text-foreground',
     success: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400',
-    warning: 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400',
+    warning: 'bg-yellow-100 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-400',
   }
 
   const sizes = {
