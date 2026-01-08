@@ -19,17 +19,17 @@ module.exports = {
           foreground: '#000000',
         },
         muted: {
-          DEFAULT: '#F5F5F5',
-          foreground: '#666666',
+          DEFAULT: 'var(--muted)',
+          foreground: 'var(--muted-foreground)',
         },
         accent: {
-          DEFAULT: '#0066FF',
+          DEFAULT: 'var(--accent)',
           foreground: '#FFFFFF',
         },
-        border: '#E5E5E5',
+        border: 'var(--border)',
         card: {
-          DEFAULT: '#FFFFFF',
-          foreground: '#000000',
+          DEFAULT: 'var(--card)',
+          foreground: 'var(--card-foreground)',
         },
       },
       fontFamily: {
