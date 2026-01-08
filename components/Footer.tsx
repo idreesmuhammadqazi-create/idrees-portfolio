@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Github, Twitter, Linkedin, Mail, ExternalLink, Code2 } from 'lucide-react'
+import { Github, Mail, ExternalLink, Code2 } from 'lucide-react'
+import { SiDiscord } from 'react-icons/si'
 
 const socialLinks = [
   {
@@ -11,18 +12,13 @@ const socialLinks = [
     icon: Github,
   },
   {
-    name: 'Twitter',
-    href: 'https://twitter.com/crypt0phage',
-    icon: Twitter,
-  },
-  {
-    name: 'LinkedIn',
-    href: 'https://linkedin.com/in/idreesqazi',
-    icon: Linkedin,
+    name: 'Discord',
+    href: 'https://discord.com/users/1386752392602718271',
+    icon: SiDiscord,
   },
   {
     name: 'Email',
-    href: 'mailto:contact@idreesqazi.dev',
+    href: 'mailto:idreesmuhammadqazi@gmail.com',
     icon: Mail,
   },
 ]

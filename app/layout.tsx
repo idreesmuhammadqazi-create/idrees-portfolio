@@ -49,7 +49,6 @@ export const metadata: Metadata = {
     title: 'Idrees Qazi | Student Developer & Creator',
     description:
       'Student Developer & Creator building tools that solve real problems.',
-    creator: '@crypt0phage',
     images: ['/og-image.png'],
   },
   robots: {

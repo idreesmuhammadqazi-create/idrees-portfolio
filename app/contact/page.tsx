@@ -4,20 +4,19 @@ import { motion } from 'framer-motion'
 import {
   Mail,
   Github,
-  Twitter,
-  Linkedin,
   MapPin,
   Clock,
   MessageSquare,
 } from 'lucide-react'
+import { SiDiscord } from 'react-icons/si'
 import ContactForm from '@/components/ContactForm'
 
 const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'contact@idreesqazi.dev',
-    href: 'mailto:contact@idreesqazi.dev',
+    value: 'idreesmuhammadqazi@gmail.com',
+    href: 'mailto:idreesmuhammadqazi@gmail.com',
   },
   {
     icon: MapPin,
@@ -41,16 +40,10 @@ const socialLinks = [
     description: '50+ repositories',
   },
   {
-    name: 'Twitter',
-    href: 'https://twitter.com/crypt0phage',
-    icon: Twitter,
-    description: '@crypt0phage',
-  },
-  {
-    name: 'LinkedIn',
-    href: 'https://linkedin.com/in/idreesqazi',
-    icon: Linkedin,
-    description: 'Professional network',
+    name: 'Discord',
+    href: 'https://discord.com/users/1386752392602718271',
+    icon: SiDiscord,
+    description: 'Chat with me',
   },
 ]
 

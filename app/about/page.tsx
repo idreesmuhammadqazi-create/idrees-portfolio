@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Twitter, Linkedin, Mail, MapPin, Calendar, Code2 } from 'lucide-react'
+import { Github, Mail, MapPin, Calendar, Code2 } from 'lucide-react'
+import { SiDiscord } from 'react-icons/si'
 import { SkillsGrid } from '@/components/SkillCard'
 import Timeline from '@/components/Timeline'
 import { skills, softSkills, timeline } from '@/lib/skills'
@@ -15,16 +16,10 @@ const socialLinks = [
     username: '@idreesmuhammadqazi-create',
   },
   {
-    name: 'Twitter',
-    href: 'https://twitter.com/crypt0phage',
-    icon: Twitter,
-    username: '@crypt0phage',
-  },
-  {
-    name: 'LinkedIn',
-    href: 'https://linkedin.com/in/idreesqazi',
-    icon: Linkedin,
-    username: 'idreesqazi',
+    name: 'Discord',
+    href: 'https://discord.com/users/1386752392602718271',
+    icon: SiDiscord,
+    username: '1386752392602718271',
   },
 ]
 
