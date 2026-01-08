@@ -90,7 +90,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-black dark:bg-white text-white dark:text-black">
+      <section className="py-16 md:py-24 bg-muted/50 dark:bg-muted/30 border-y border-border">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -102,17 +102,16 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Let&apos;s Build Something Together
             </h2>
-            <p className="text-white/70 dark:text-black/70 mb-8 text-lg">
+            <p className="text-muted-foreground mb-8 text-lg">
               Have a project idea or want to collaborate? I&apos;m always open to
               discussing new opportunities and interesting projects.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact">
                 <Button
-                  variant="secondary"
+                  variant="primary"
                   size="lg"
                   rightIcon={<ArrowRight className="w-4 h-4" />}
-                  className="bg-white dark:bg-black text-black dark:text-white hover:bg-white/90 dark:hover:bg-black/90"
                 >
                   Get in Touch
                 </Button>
@@ -121,7 +120,6 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-white/30 dark:border-black/30 text-white dark:text-black hover:bg-white/10 dark:hover:bg-black/10"
                 >
                   Learn More About Me
                 </Button>
