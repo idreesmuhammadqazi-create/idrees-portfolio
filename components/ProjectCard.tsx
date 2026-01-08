@@ -118,7 +118,7 @@ export default function ProjectCard({
       </motion.div>
 
       {/* Hover Gradient */}
-      <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+      <div className="absolute inset-0 bg-accent/5 dark:bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
     </motion.div>
   )
 }
@@ -129,7 +129,7 @@ interface FeaturedProjectsProps {
 
 export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
   return (
-    <section className="py-16 md:py-24 bg-muted/30">
+    <section className="py-16 md:py-24 bg-muted/30 dark:bg-muted/10">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

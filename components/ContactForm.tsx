@@ -103,7 +103,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-medium mb-2"
+          className="block text-sm font-medium mb-2 text-foreground"
         >
           Name
         </label>
@@ -114,7 +114,8 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           className={cn(
-            'w-full px-4 py-3 rounded-lg border bg-background transition-colors',
+            'w-full px-4 py-3 rounded-lg border bg-background dark:bg-card text-foreground transition-colors',
+            'placeholder:text-muted-foreground dark:placeholder:text-muted-foreground/60',
             'focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent',
             errors.name ? 'border-red-500' : 'border-border'
           )}
@@ -129,7 +130,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium mb-2"
+          className="block text-sm font-medium mb-2 text-foreground"
         >
           Email
         </label>
@@ -140,7 +141,8 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           className={cn(
-            'w-full px-4 py-3 rounded-lg border bg-background transition-colors',
+            'w-full px-4 py-3 rounded-lg border bg-background dark:bg-card text-foreground transition-colors',
+            'placeholder:text-muted-foreground dark:placeholder:text-muted-foreground/60',
             'focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent',
             errors.email ? 'border-red-500' : 'border-border'
           )}
@@ -155,7 +157,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="subject"
-          className="block text-sm font-medium mb-2"
+          className="block text-sm font-medium mb-2 text-foreground"
         >
           Subject
         </label>
@@ -166,7 +168,8 @@ export default function ContactForm() {
           value={formData.subject}
           onChange={handleChange}
           className={cn(
-            'w-full px-4 py-3 rounded-lg border bg-background transition-colors',
+            'w-full px-4 py-3 rounded-lg border bg-background dark:bg-card text-foreground transition-colors',
+            'placeholder:text-muted-foreground dark:placeholder:text-muted-foreground/60',
             'focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent',
             errors.subject ? 'border-red-500' : 'border-border'
           )}
@@ -181,7 +184,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium mb-2"
+          className="block text-sm font-medium mb-2 text-foreground"
         >
           Message
         </label>
@@ -192,7 +195,8 @@ export default function ContactForm() {
           onChange={handleChange}
           rows={5}
           className={cn(
-            'w-full px-4 py-3 rounded-lg border bg-background transition-colors resize-none',
+            'w-full px-4 py-3 rounded-lg border bg-background dark:bg-card text-foreground transition-colors resize-none',
+            'placeholder:text-muted-foreground dark:placeholder:text-muted-foreground/60',
             'focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent',
             errors.message ? 'border-red-500' : 'border-border'
           )}

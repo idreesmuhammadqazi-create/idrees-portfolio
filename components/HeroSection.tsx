@@ -52,12 +52,12 @@ export default function HeroSection() {
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-20 left-10 w-20 h-20 bg-accent/10 rounded-full blur-xl"
+        className="absolute top-20 left-10 w-20 h-20 bg-accent/10 dark:bg-accent/20 rounded-full blur-xl"
       />
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute bottom-20 right-10 w-32 h-32 bg-accent/10 rounded-full blur-xl"
+        className="absolute bottom-20 right-10 w-32 h-32 bg-accent/10 dark:bg-accent/20 rounded-full blur-xl"
       />
 
       <div className="container-custom relative z-10">
@@ -84,7 +84,7 @@ export default function HeroSection() {
             <span className="relative">
               Idrees
               <motion.span
-                className="absolute -bottom-2 left-0 w-full h-3 bg-accent/30 -z-10"
+                className="absolute -bottom-2 left-0 w-full h-3 bg-accent/30 dark:bg-accent/40 -z-10"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
@@ -175,12 +175,12 @@ export default function HeroSection() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-2"
+          className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 dark:border-muted-foreground/50 flex items-start justify-center p-2"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50"
+            className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50 dark:bg-muted-foreground/70"
           />
         </motion.div>
       </motion.div>
