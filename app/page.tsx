@@ -90,7 +90,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-accent/10 dark:bg-accent/20 border-y border-accent/30">
+      <section className="py-16 md:py-24 bg-blue-50 dark:bg-blue-950/50 border-y border-blue-200 dark:border-blue-800">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

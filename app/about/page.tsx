@@ -181,7 +181,7 @@ export default function AboutPage() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto"
         >
-          <div className="p-8 rounded-xl bg-accent/10 dark:bg-accent/20 border border-accent/30 text-center">
+          <div className="p-8 rounded-xl bg-blue-50 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-800 text-center">
             <h2 className="text-2xl font-bold mb-4">My Philosophy</h2>
             <blockquote className="text-lg italic text-foreground/80 mb-4">
               &quot;Build what you wish existed. Ship fast. Iterate based on feedback. 
