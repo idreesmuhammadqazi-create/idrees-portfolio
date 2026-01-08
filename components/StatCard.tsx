@@ -68,7 +68,7 @@ export default function StatCard({
       <div className="text-muted-foreground font-medium">{label}</div>
 
       {/* Hover Effect */}
-      <div className="absolute inset-0 rounded-xl bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+      <div className="absolute inset-0 rounded-xl bg-accent/5 dark:bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity" />
     </motion.div>
   )
 }

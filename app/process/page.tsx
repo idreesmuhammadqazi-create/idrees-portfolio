@@ -159,7 +159,7 @@ export default function ProcessPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-6 rounded-xl border border-border bg-card hover:border-accent/50 transition-colors"
               >
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 dark:bg-accent/20 flex items-center justify-center mb-4">
                   <point.icon className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{point.title}</h3>
@@ -264,7 +264,7 @@ export default function ProcessPage() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-muted/50"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-muted/50 dark:bg-muted/30"
                 >
                   <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
                   <span className="text-sm">{principle}</span>
@@ -281,7 +281,7 @@ export default function ProcessPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <div className="p-8 rounded-xl bg-muted/50 border border-border text-center">
+          <div className="p-8 rounded-xl bg-muted/50 dark:bg-muted/30 border border-border text-center">
             <Zap className="w-12 h-12 mx-auto mb-4 text-accent" />
             <h2 className="text-2xl font-bold mb-4">Want to Work Together?</h2>
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">

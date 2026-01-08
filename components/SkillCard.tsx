@@ -72,7 +72,7 @@ function SkillItem({ skill, index }: SkillItemProps) {
           {proficiencyLabels[skill.proficiency]}
         </span>
       </div>
-      <div className="h-2 bg-muted rounded-full overflow-hidden">
+      <div className="h-2 bg-muted dark:bg-muted/50 rounded-full overflow-hidden">
         <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: `${skill.percentage}%` }}

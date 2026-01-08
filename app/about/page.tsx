@@ -44,7 +44,7 @@ export default function AboutPage() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="w-32 h-32 mx-auto mb-6 rounded-full bg-muted border-4 border-accent/20 flex items-center justify-center"
+            className="w-32 h-32 mx-auto mb-6 rounded-full bg-muted dark:bg-muted/50 border-4 border-accent/20 dark:border-accent/30 flex items-center justify-center"
           >
             <Code2 className="w-16 h-16 text-accent" />
           </motion.div>
@@ -183,11 +183,11 @@ export default function AboutPage() {
         >
           <div className="p-8 rounded-xl bg-black dark:bg-white text-white dark:text-black text-center">
             <h2 className="text-2xl font-bold mb-4">My Philosophy</h2>
-            <blockquote className="text-lg italic opacity-90 mb-4">
+            <blockquote className="text-lg italic opacity-90 dark:opacity-80 mb-4">
               &quot;Build what you wish existed. Ship fast. Iterate based on feedback. 
               The best code is code that solves real problems for real people.&quot;
             </blockquote>
-            <p className="text-sm opacity-70">— The Vibecoding Manifesto</p>
+            <p className="text-sm opacity-70 dark:opacity-60">— The Vibecoding Manifesto</p>
           </div>
         </motion.section>
       </div>

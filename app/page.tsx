@@ -78,7 +78,7 @@ export default function HomePage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-6 rounded-xl border border-border bg-card hover:border-accent/50 transition-colors group"
               >
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 dark:bg-accent/20 flex items-center justify-center mb-4 group-hover:bg-accent/20 dark:group-hover:bg-accent/30 transition-colors">
                   <feature.icon className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
