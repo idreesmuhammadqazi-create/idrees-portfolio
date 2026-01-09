@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Github, Mail, MapPin, Calendar, Code2 } from 'lucide-react'
 import { SiDiscord } from 'react-icons/si'
+import Image from 'next/image'
 import { SkillsGrid } from '@/components/SkillCard'
 import Timeline from '@/components/Timeline'
 import { skills, softSkills, timeline } from '@/lib/skills'
@@ -39,9 +40,15 @@ export default function AboutPage() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="w-32 h-32 mx-auto mb-6 rounded-full bg-muted dark:bg-muted/50 border-4 border-accent/20 dark:border-accent/30 flex items-center justify-center"
+            className="w-32 h-32 mx-auto mb-6 rounded-full border-4 border-accent/20 dark:border-accent/30 overflow-hidden relative"
           >
-            <Code2 className="w-16 h-16 text-accent" />
+            <Image
+              src="/profile-photo.png"
+              alt="Idrees Muhammad Qazi"
+              fill
+              className="object-cover"
+              priority
+            />
           </motion.div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
