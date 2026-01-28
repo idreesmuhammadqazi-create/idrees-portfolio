@@ -14,7 +14,7 @@ interface AchievementsModalProps {
   onClose: () => void
 }
 
-const TOTAL_ACHIEVEMENTS = 10
+const TOTAL_ACHIEVEMENTS = 11
 const ALL_POSSIBLE_ACHIEVEMENTS = [
   { id: 'dev-console-found', name: 'Console Cowboy', description: 'Discovered the secret developer console', icon: '🖥️' },
   { id: 'project-viewer', name: 'Project Explorer', description: 'Viewed the secret projects list', icon: '🚀' },
@@ -26,6 +26,7 @@ const ALL_POSSIBLE_ACHIEVEMENTS = [
   { id: 'speed-runner', name: 'Speed Runner', description: 'Found 3 secrets in under 5 minutes', icon: '⚡' },
   { id: 'night-owl', name: 'Night Owl', description: 'Visited the site past midnight', icon: '🦉' },
   { id: 'social-butterfly', name: 'Social Butterfly', description: 'Shared achievements on social media', icon: '🦋' },
+  { id: 'vault-explorer', name: 'Vault Explorer', description: 'Discovered the secret page with behind-the-scenes stories', icon: '🔐' },
 ]
 
 export default function AchievementsModal({ isOpen, onClose }: AchievementsModalProps) {
