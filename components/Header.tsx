@@ -4,9 +4,10 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Moon, Sun, Code2, Sparkles, Palette, Smile, Zap, Heart } from 'lucide-react'
+import { Menu, X, Moon, Sun, Code2, Sparkles, Palette, Smile, Zap, Heart, Trophy } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import ClickCounter from '@/components/EasterEggs/ClickCounter'
+import { useEasterEgg } from '@/lib/EasterEggContext'
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -35,6 +36,7 @@ export default function Header() {
   const logoRef = useRef<HTMLDivElement>(null)
   const longPressTimer = useRef<NodeJS.Timeout | null>(null)
   const themeButtonRef = useRef<HTMLButtonElement>(null)
+  const { showAchievementsModal, getAchievementCount } = useEasterEgg()
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme')
@@ -206,6 +208,28 @@ export default function Header() {
 
             {/* Right side actions */}
             <div className="flex items-center gap-2">
+              {/* Achievements Button */}
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                onClick={showAchievementsModal}
+                className={cn(
+                  'relative w-10 h-10 rounded-lg flex items-center justify-center hover:bg-muted transition-colors',
+                  partyMode && 'party-button'
+                )}
+                aria-label="View achievements"
+              >
+                <Trophy className="w-5 h-5" />
+                {getAchievementCount() > 0 && (
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className="absolute -top-1 -right-1 w-5 h-5 bg-accent text-white text-xs font-bold rounded-full flex items-center justify-center"
+                  >
+                    {getAchievementCount()}
+                  </motion.div>
+                )}
+              </motion.button>
+
               {/* Theme Toggle */}
               <motion.button
                 ref={themeButtonRef}
