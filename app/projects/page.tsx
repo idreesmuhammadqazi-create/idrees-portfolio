@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { projects, categories, getProjectsByCategory } from '@/lib/projects'
 import ProjectCard from '@/components/ProjectCard'
 import FilterButtons from '@/components/FilterButtons'
+import SecretProjectsList from '@/components/EasterEggs/SecretProjectCard'
 
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState('all')
@@ -108,6 +109,9 @@ export default function ProjectsPage() {
             </div>
           </div>
         </motion.div>
+
+        {/* Secret Projects Section */}
+        <SecretProjectsList />
       </div>
     </div>
   )
