@@ -168,3 +168,112 @@ h1, h2, h3 {
     padding: 0 3rem;
   }
 }
+
+/* Party Mode */
+@keyframes rainbow-bg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes rainbow-text {
+  0% { color: #ff0000; }
+  16% { color: #ff8800; }
+  33% { color: #ffff00; }
+  50% { color: #00ff00; }
+  66% { color: #0088ff; }
+  83% { color: #8800ff; }
+  100% { color: #ff0000; }
+}
+
+@keyframes rainbow-border {
+  0% { border-color: #ff0000; }
+  16% { border-color: #ff8800; }
+  33% { border-color: #ffff00; }
+  50% { border-color: #00ff00; }
+  66% { border-color: #0088ff; }
+  83% { border-color: #8800ff; }
+  100% { border-color: #ff0000; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.party-mode {
+  animation: rainbow-bg 10s ease infinite;
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff8800,
+    #ffff00,
+    #00ff00,
+    #0088ff,
+    #8800ff,
+    #ff0000
+  );
+  background-size: 400% 400%;
+}
+
+.party-header {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 136, 0, 0.1),
+    rgba(255, 255, 0, 0.1),
+    rgba(0, 255, 0, 0.1),
+    rgba(0, 136, 255, 0.1),
+    rgba(136, 0, 255, 0.1)
+  ) !important;
+  background-size: 400% 400%;
+  animation: rainbow-bg 10s ease infinite;
+  backdrop-filter: blur(10px);
+}
+
+.party-logo {
+  animation: rainbow-bg 5s ease infinite, float 3s ease-in-out infinite;
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff8800,
+    #ffff00,
+    #00ff00,
+    #0088ff,
+    #8800ff
+  ) !important;
+  background-size: 400% 400%;
+}
+
+.party-text {
+  animation: rainbow-text 3s linear infinite;
+  font-weight: 900;
+}
+
+.party-button {
+  animation: float 2s ease-in-out infinite;
+}
+
+.party-icon {
+  animation: rainbow-text 2s linear infinite, spin-slow 4s linear infinite;
+}
+
+.party-nav-active {
+  animation: rainbow-bg 5s ease infinite;
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff8800,
+    #ffff00,
+    #00ff00,
+    #0088ff,
+    #8800ff
+  ) !important;
+  background-size: 400% 400%;
+  color: white !important;
+}
