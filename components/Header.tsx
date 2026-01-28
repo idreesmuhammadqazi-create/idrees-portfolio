@@ -1,11 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Moon, Sun, Code2 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import ClickCounter from '@/components/EasterEggs/ClickCounter'
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -20,6 +21,7 @@ export default function Header() {
   const [isDark, setIsDark] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
+  const logoRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     // Check for saved theme preference or system preference
@@ -63,18 +65,21 @@ export default function Header() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <motion.div
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.5 }}
-              className="w-10 h-10 bg-black dark:bg-white rounded-lg flex items-center justify-center"
-            >
-              <Code2 className="w-5 h-5 text-white dark:text-black" />
-            </motion.div>
-            <span className="font-bold text-lg hidden sm:block">
-              Idrees<span className="text-accent">.</span>
-            </span>
-          </Link>
+          <ClickCounter>
+            <Link href="/" className="flex items-center gap-2 group">
+              <motion.div
+                ref={logoRef}
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.5 }}
+                className="w-10 h-10 bg-black dark:bg-white rounded-lg flex items-center justify-center"
+              >
+                <Code2 className="w-5 h-5 text-white dark:text-black" />
+              </motion.div>
+              <span className="font-bold text-lg hidden sm:block">
+                Idrees<span className="text-accent">.</span>
+              </span>
+            </Link>
+          </ClickCounter>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
